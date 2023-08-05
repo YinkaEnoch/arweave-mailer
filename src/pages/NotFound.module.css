@@ -1,0 +1,40 @@
+.container {
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header {
+  margin-top: 3rem;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: var(--primaryDarkColor);
+}
+
+.content {
+  margin: 1rem 0;
+}
+
+.btn {
+  color: var(--primaryDarkColor);
+  display: block;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+
+.btn:hover {
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 6rem;
+  }
+}

@@ -1,0 +1,37 @@
+.container {
+  padding: 2rem;
+}
+
+.contentContainer {
+  border-bottom: 1px solid grey;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contentContainer h1,
+.contentContainer h2 {
+  font-size: 2rem;
+}
+
+.bottomLink {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    padding: 2rem 8rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 2rem 16rem;
+  }
+}
