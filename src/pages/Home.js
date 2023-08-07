@@ -55,7 +55,6 @@ export default function Home() {
             id="firstname"
             type="text"
             required
-            placeholder="Yinka"
             disabled={disabledElement}
             value={firstName}
             onInput={(e) => setFirstName(e.target.value)}
@@ -64,7 +63,6 @@ export default function Home() {
           <input
             id="email"
             type="email"
-            placeholder="example@mail.com"
             required
             disabled={disabledElement}
             value={email}
@@ -76,7 +74,6 @@ export default function Home() {
             type="text"
             required
             disabled={disabledElement}
-            placeholder="NlNd_PcajvxAkOweo7rZHJKiIJ7vW1WXt9vb6CzGmC0"
             value={walletAddress}
             onInput={(e) => setWalletAddress(e.target.value)}
           />
