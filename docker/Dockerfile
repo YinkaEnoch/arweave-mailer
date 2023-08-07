@@ -12,7 +12,7 @@ WORKDIR /var/app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm Install
+RUN npm install
 
 # Copy project files
 COPY ./ ./
