@@ -12,19 +12,10 @@ WORKDIR /var/app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --omit=dev --ignore-scripts
+RUN npm Install
 
 # Copy project files
 COPY ./ ./
 
 # Build project 
-CMD ["npm", "run", "build"]
-
-FROM nginx:1.25.0-bullseye
-WORKDIR /usr/share/nginx/html
-
-RUN rm -rf ./*
-
-COPY --from=build /var/app/build ./
-
-ENTRYPOINT ['nginx', "-g", "daemon off;"]
+CMD ["npm", "start"]
