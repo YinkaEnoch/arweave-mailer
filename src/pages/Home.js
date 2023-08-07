@@ -17,7 +17,6 @@ export default function Home() {
 
       // Make API call
       const url = process.env.REACT_APP_API_URL;
-      console.log({ url });
       const result = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -90,8 +89,6 @@ export default function Home() {
             )}
           </button>
         </form>
-
-        <p className={styles.redText}>Only submit testnet wallet address!</p>
       </div>
       <ToastContainer delay={3000} position="top-right" />
       <Footer />
