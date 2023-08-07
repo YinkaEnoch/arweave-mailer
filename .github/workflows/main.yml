@@ -42,3 +42,11 @@ jobs:
             type=sha
 
       - name: Build and Push Docker image
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./docker/Dockerfile
+          push: true
+          tags: |
+            ${{ steps.meta.outputs.tags }}
+            ${{secrets.DOCKER_USERNAME}}/arweave_frontend:latest
