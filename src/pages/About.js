@@ -45,8 +45,8 @@ export default function About() {
                   and stores it in a database.
                 </li>
                 <li>
-                  <strong>Monitor:</strong> Polls mined blocks from the
-                  blockchain
+                  <strong>Monitor:</strong> Get transaction details from mined
+                  blocks
                 </li>
                 <li>
                   <strong>Mailing Queue:</strong> Send mail(s) to user's email
